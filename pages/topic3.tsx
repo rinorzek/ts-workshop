@@ -8,35 +8,6 @@ const Topic3: NextPage = () => {
 
   // ///////////////////////////////
 
-  function process(text: string) {
-    return text && text.replace(/f/g, "p");
-  }
-
-  process("foo").toUpperCase();
-
-  /// ---
-
-  // function process(text: string | null): string | null {
-  //   return text && text.replace(/f/g, "p")
-  // }
-
-  //               ⌄ Type Error! :(
-  // process("foo").toUpperCase()
-
-  // function process(text: null): null;
-  // function process(text: string): string;
-  // function process(text: any) {
-  //   ...
-  // }
-
-  // process(string | null)
-
-  // function process<T extends string | null>(
-  //   text: T
-  // ): T extends string ? string : null {
-  //   ...
-  // }
-
   type FavoriteColors =
     | "dark sienna"
     | "sap green"
